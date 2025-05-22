@@ -1,24 +1,23 @@
 import "./App.css";
 
-// [ ] 1) Implement the isAnagram function
-// [ ] 2) Update the App component to allow 'word1' and 'word2' to be editable
-// [ ] 3) Update the App component to test 3 words
-// [ ] 4) Refactor, generalize to accept an arbitrary number of words
-// [ ] 5) Improve the UX
+// [ ] 1) Troubleshoot the 'blank screen' issue
+// [ ] 2) Implement the anagram function (see below)
+// [ ] 3) Display the 'result' of the anagram function on screen
+// [ ] 4) Update the App component to 'wire up' the inputs to the anagram function
+// [ ] 5) Update the App component to test 3 words
+// [ ] 6) Refactor, generalize to accept an arbitrary number of words
+// [ ] 7) Improve the UI/UX
 
 function App() {
-  const word1 = "wolf";
-  const word2 = "fowl";
-
   return (
     <>
       <h1>Anagrams?</h1>
       <div className="card">
         <p>
-          <input type="text" />
+          <input type="text" name="word1" />
         </p>
         <p>
-          <input type="text" />
+          <input type="text" name="word2" />
         </p>
       </div>
       <p>{result}</p>
