@@ -7,6 +7,7 @@ import "./App.css";
 // [ ] 5) Update the App component to test 3 words
 // [ ] 6) Refactor, generalize to accept an arbitrary number of words
 // [ ] 7) Improve the UI/UX
+// [ ] 8) Update the component to fetch the anagram result from the backend (/api/anagram/:word1/:word2)
 
 function App() {
   return (
