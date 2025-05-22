@@ -10,28 +10,26 @@ function App() {
   const word1 = "wolf";
   const word2 = "fowl";
 
-  const result = isAnagram(word1, word2);
-
   return (
     <>
       <h1>Anagrams?</h1>
       <div className="card">
-        <p className="word-field">
-          <input type="text" placeholder="enter word1" />
+        <p>
+          <input type="text" />
         </p>
-        <p className="word-field">
-          <input type="text" placeholder="enter word2" />
+        <p>
+          <input type="text" />
         </p>
-        <h2 className={result ? "success" : "failure"}>
-          {result ? "YES" : "NO"}
-        </h2>
       </div>
+      <p>{result}</p>
     </>
   );
 }
 
+export default App;
+
 /**
- * Checks if two strings are anagrams of each other.
+ * The following function checks if two strings are anagrams of each other.
  * An anagram is a word formed by rearranging the letters of another word,
  * using all the original letters exactly once.
  *
@@ -39,8 +37,4 @@ function App() {
  * @param word2 - The second string to compare
  * @returns True if the strings are anagrams of each other, false otherwise
  */
-function isAnagram(word1: string, word2: string): boolean {
-  return false;
-}
-
-export default App;
+// TODO: implement anagram function
